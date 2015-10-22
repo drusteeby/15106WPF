@@ -1,0 +1,94 @@
+﻿<Results:ResultPageViewModel xmlns:Results="clr-namespace:Tecmosa.Results">
+	<Results:ResultPageViewModel.TestPoints>
+		<Results:TestPointViewModel Name="Cras duis">
+			<Results:TestPointViewModel.Results>
+				<Results:ResultViewModel Name="Vestibulum aenean" Value="299.16"/>
+				<Results:ResultViewModel Name="Aliquam integer quisque nunc adipiscing" Value="223.51"/>
+				<Results:ResultViewModel Name="Curabitur nam phasellus" Value="904.96"/>
+				<Results:ResultViewModel Name="Class parturient vivamus curae" Value="504.5"/>
+				<Results:ResultViewModel Name="Aliquam amet donec aliquet" Value="551.22"/>
+			</Results:TestPointViewModel.Results>
+		</Results:TestPointViewModel>
+		<Results:TestPointViewModel Name="Sed maecenas dis blandit">
+			<Results:TestPointViewModel.Results>
+				<Results:ResultViewModel Name="Commodo conubia" Value="588.75"/>
+				<Results:ResultViewModel Name="Etiam praesent consequat vestibulum vestibulum" Value="636.9"/>
+				<Results:ResultViewModel Name="Accumsan mauris bibendum est hac" Value="307.43"/>
+				<Results:ResultViewModel Name="Dictumst fusce" Value="889.26"/>
+				<Results:ResultViewModel Name="Nullam eleifend convallis facilisi adipiscing" Value="864.29"/>
+			</Results:TestPointViewModel.Results>
+		</Results:TestPointViewModel>
+		<Results:TestPointViewModel Name="Ante faucibus parturient">
+			<Results:TestPointViewModel.Results>
+				<Results:ResultViewModel Name="Cubilia dignissim elementum leo facilisis" Value="173.61"/>
+				<Results:ResultViewModel Name="Habitant inceptos fermentum vestibulum" Value="857.5"/>
+				<Results:ResultViewModel Name="Dapibus mus lorem" Value="423.77"/>
+				<Results:ResultViewModel Name="Vestibulum adipiscing arcu parturient" Value="954.08"/>
+				<Results:ResultViewModel Name="Aptent vestibulum" Value="612.08"/>
+			</Results:TestPointViewModel.Results>
+		</Results:TestPointViewModel>
+		<Results:TestPointViewModel Name="Vestibulum morbi nulla">
+			<Results:TestPointViewModel.Results>
+				<Results:ResultViewModel Name="Interdum adipiscing egestas euismod" Value="375.53"/>
+				<Results:ResultViewModel Name="Proin lobortis" Value="631.37"/>
+				<Results:ResultViewModel Name="Nascetur pharetra augue fringilla" Value="239.52"/>
+				<Results:ResultViewModel Name="Habitasse hendrerit" Value="411.5"/>
+				<Results:ResultViewModel Name="Placerat parturient feugiat himenaeos" Value="573.82"/>
+			</Results:TestPointViewModel.Results>
+		</Results:TestPointViewModel>
+		<Results:TestPointViewModel Name="Pulvinar diam dolor vestibulum">
+			<Results:TestPointViewModel.Results>
+				<Results:ResultViewModel Name="Sagittis imperdiet gravida vestibulum" Value="100.28"/>
+				<Results:ResultViewModel Name="Fames auctor iaculis" Value="699.06"/>
+				<Results:ResultViewModel Name="Congue malesuada felis adipiscing" Value="177.62"/>
+				<Results:ResultViewModel Name="Ipsum justo lacinia parturient vestibulum" Value="573.84"/>
+				<Results:ResultViewModel Name="Lacus cursus laoreet vestibulum nec" Value="609.95"/>
+			</Results:TestPointViewModel.Results>
+		</Results:TestPointViewModel>
+		<Results:TestPointViewModel Name="Non senectus penatibus eget dictum">
+			<Results:TestPointViewModel.Results>
+				<Results:ResultViewModel Name="Lorem adipiscing sociosqu elit" Value="582.33"/>
+				<Results:ResultViewModel Name="Suscipit torquent natoque" Value="373.61"/>
+				<Results:ResultViewModel Name="Magna ultrices porttitor lectus" Value="697.73"/>
+				<Results:ResultViewModel Name="Posuere massa" Value="833.04"/>
+				<Results:ResultViewModel Name="Tincidunt enim" Value="990.45"/>
+			</Results:TestPointViewModel.Results>
+		</Results:TestPointViewModel>
+		<Results:TestPointViewModel Name="Erat parturient vestibulum tristique">
+			<Results:TestPointViewModel.Results>
+				<Results:ResultViewModel Name="Potenti pretium per" Value="966.07"/>
+				<Results:ResultViewModel Name="Sed rhoncus libero" Value="754.94"/>
+				<Results:ResultViewModel Name="Metus vehicula morbi vestibulum" Value="542.06"/>
+				<Results:ResultViewModel Name="Sodales eros volutpat ultricies venenatis" Value="749.43"/>
+				<Results:ResultViewModel Name="Nibh viverra maecenas praesent" Value="152.46"/>
+			</Results:TestPointViewModel.Results>
+		</Results:TestPointViewModel>
+		<Results:TestPointViewModel Name="Accumsan neque vulputate adipiscing parturient">
+			<Results:TestPointViewModel.Results>
+				<Results:ResultViewModel Name="Sem aliquam" Value="140.63"/>
+				<Results:ResultViewModel Name="Curabitur nisi bibendum phasellus" Value="728.08"/>
+				<Results:ResultViewModel Name="Vestibulum nisl dictumst vestibulum eleifend" Value="390.2"/>
+				<Results:ResultViewModel Name="Adipiscing nunc parturient sit" Value="540.13"/>
+				<Results:ResultViewModel Name="Facilisi ligula vestibulum odio litora" Value="720.36"/>
+			</Results:TestPointViewModel.Results>
+		</Results:TestPointViewModel>
+		<Results:TestPointViewModel Name="Vel faucibus habitant inceptos luctus">
+			<Results:TestPointViewModel.Results>
+				<Results:ResultViewModel Name="Interdum integer" Value="808.14"/>
+				<Results:ResultViewModel Name="Magnis orci netus mattis lobortis" Value="763.77"/>
+				<Results:ResultViewModel Name="Nascetur pede vestibulum nam" Value="895.25"/>
+				<Results:ResultViewModel Name="Pharetra sed dis mauris" Value="310.78"/>
+				<Results:ResultViewModel Name="Est nulla mollis placerat hac" Value="688.18"/>
+			</Results:TestPointViewModel.Results>
+		</Results:TestPointViewModel>
+		<Results:TestPointViewModel Name="Adipiscing parturient quisque vivamus leo">
+			<Results:TestPointViewModel.Results>
+				<Results:ResultViewModel Name="Quam porta aliquam montes" Value="940.83"/>
+				<Results:ResultViewModel Name="Consequat nostra" Value="604.67"/>
+				<Results:ResultViewModel Name="Convallis mus pulvinar" Value="809.96"/>
+				<Results:ResultViewModel Name="Nec quis ornare non platea" Value="880.73"/>
+				<Results:ResultViewModel Name="Aliquet vestibulum purus per vestibulum" Value="168.92"/>
+			</Results:TestPointViewModel.Results>
+		</Results:TestPointViewModel>
+	</Results:ResultPageViewModel.TestPoints>
+</Results:ResultPageViewModel>

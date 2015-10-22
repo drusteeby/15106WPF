@@ -1,0 +1,76 @@
+﻿<UserControl x:Class="Tecmosa.Controls.ResultData.GridView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Tecmosa.Controls.ResultData"
+             xmlns:results="clr-namespace:Tecmosa.Controls.Results"
+             xmlns:controls="clr-namespace:Tecmosa.Controls"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"
+             d:DesignHeight="498.991" d:DesignWidth="1445.704" d:DataContext="{d:DesignData /SampleData/GridViewModelSampleData1.xaml}">
+    
+    <ListView ItemsSource="{Binding ResultData}"   >
+        <ListView.ItemsPanel>
+            <ItemsPanelTemplate>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top"/>
+            </ItemsPanelTemplate>
+        </ListView.ItemsPanel>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <StackPanel>
+                    <results:ResultsHeader/>
+                    <ListView Grid.IsSharedSizeScope="True" ItemsSource="{Binding Results}">
+                        <ListView.ItemTemplate >
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="Name"/>
+                                        <ColumnDefinition Width="Auto" SharedSizeGroup="Value"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="{Binding Name}"/>
+                                    <TextBlock Grid.Column="1"  Text="{Binding Value}"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.GroupStyle>
+                            <GroupStyle>
+                                <GroupStyle.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Name}" Background="LightBlue" Foreground="White"/>
+                                    </DataTemplate>
+                                </GroupStyle.HeaderTemplate>
+                            </GroupStyle>
+                        </ListView.GroupStyle>
+                    </ListView>
+                </StackPanel>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+
+
+    <!--<ListView x:Name="resultsList" ItemsSource="{Binding Results}" >
+        <ListView.GroupStyle>
+            <GroupStyle>
+                <GroupStyle.Panel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </GroupStyle.Panel>
+                <GroupStyle.HeaderTemplate>
+                    <DataTemplate>
+                        <results:ResultsHeader/>
+                    </DataTemplate>
+                </GroupStyle.HeaderTemplate>
+            </GroupStyle>
+        </ListView.GroupStyle>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <results:ResultCell/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>-->
+
+</UserControl>

@@ -1,0 +1,85 @@
+﻿<UserControl x:Class="Tecmosa.Results.ResultPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Tecmosa.Results"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" d:DataContext="{d:DesignData /SampleData/ResultPageViewModelSampleData.xaml}">
+    <UserControl.Resources>
+        <local:StringAddSpaceToCapsConverter x:Key="CapsSpace"/>
+    </UserControl.Resources>
+    <ItemsControl ItemsSource="{Binding TestPoints}" Background="White" Margin="5" >
+        <ItemsControl.ItemsPanel>
+            <ItemsPanelTemplate>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top"/>
+            </ItemsPanelTemplate>
+        </ItemsControl.ItemsPanel>
+        <ItemsControl.ItemTemplate>
+            <DataTemplate>
+                <StackPanel Margin="5">
+                    <Button Content="Toggle Grouping" Command="{Binding ToggleLiveGrouping}" Margin="5"/>
+                    <Border BorderBrush="Black" BorderThickness="2"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                        <TextBlock Text="{Binding Name}" 
+                                   FontSize="20"
+                                    Background="White"
+                                    FontWeight="Bold"
+                                    FontFamily="Microsoft Sans Serif"
+                                    TextAlignment="Center"
+                                    HorizontalAlignment="Stretch"
+                                    VerticalAlignment="Center"
+                                    Margin="5"        />
+                    </Border>
+                    <ItemsControl Grid.IsSharedSizeScope="True" ItemsSource="{Binding Results}" >
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+
+                                <Grid Background="White" Name="gridCell">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="8*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Name="ResultValue"
+                                               Text="{Binding Value}"
+                                                Foreground="Black"
+                                                FontFamily="Microsoft Sans Serif"
+                                                FontSize="20"
+                                                FontWeight="Bold"
+                                                HorizontalAlignment="Center"
+                                                VerticalAlignment="Center"
+                                                Margin="5"/>
+
+                                    <DockPanel Grid.Column="1" Name="sigmaBorder" Visibility="Collapsed"  HorizontalAlignment="Stretch">
+                                        <Line DockPanel.Dock="Left" VerticalAlignment="Stretch" Name="SigmaLine" Stroke="LightGray" StrokeThickness="2" Margin="0,0,0,-3"></Line>
+                                        <TextBlock DockPanel.Dock="Left" Name="SigmaValue"                 
+                                                                     
+                                                   Foreground="Black"
+                                                   FontFamily="Microsoft Sans Serif"
+                                                   FontSize="20"
+                                                   HorizontalAlignment="Center"                    
+                           
+                                                   VerticalAlignment="Center"                   
+                                                   Margin="5"/>
+                                    </DockPanel>
+
+
+
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                        <ItemsControl.GroupStyle>
+                            <GroupStyle>
+                                <GroupStyle.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Name,Converter={StaticResource CapsSpace}}" Background="LightBlue" Foreground="White"/>
+                                    </DataTemplate>
+                                </GroupStyle.HeaderTemplate>
+                            </GroupStyle>
+                        </ItemsControl.GroupStyle>
+                    </ItemsControl>
+                </StackPanel>
+            </DataTemplate>
+        </ItemsControl.ItemTemplate>
+    </ItemsControl>
+</UserControl>
