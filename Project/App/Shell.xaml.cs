@@ -1,4 +1,7 @@
 ﻿using MCM.Controls;
+using MCM.Core.Controls;
+using MCM.Core.Logging;
+using Microsoft.Practices.Prism.Commands;
 using Microsoft.Practices.Unity;
 using Prism.Regions;
 using System;
@@ -35,12 +38,21 @@ namespace Tecmosa
         double _mainScreenWidth;
         double _mainScreenHeight;
 
+        public DelegateCommand<KeyEventArgs> KeyPressCommand { get; set; }
+
+
+
         public Shell(IRegionManager RegionManager)
         {
             InitializeComponent();
+
+            FormExtender.MainForm = mainScreen;
+            System.Windows.Forms.Application.Run(FormExtender.MainForm);
+
             RegionManager.RegisterViewWithRegion("MainRegion", typeof(Results.ResultPage));
 
-
+            KeyPressCommand = new DelegateCommand<KeyEventArgs>(OnKeyPressed);
+            AddHandler(Keyboard.KeyDownEvent, (KeyEventHandler)KeyPressed);
 
 
             //transform.ScaleX = 1;
@@ -59,9 +71,25 @@ namespace Tecmosa
             bi.EndInit();
 
             mainGrid.Background = new ImageBrush(bi);
+            this.Focus();
 
         }
 
+        private void KeyPressed(object sender, KeyEventArgs e)
+        {
+            OnKeyPressed(e);
+        }
+
+        private void OnKeyPressed(KeyEventArgs e)
+        {
+            if ((e.Key == Key.F5) && (Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control)
+            {
+                DataSimulator simulator = new DataSimulator();
+                mainScreen.AddOwnedForm(simulator);
+                simulator.Visible = true;
+                Log.Add(Log.Type.UserAction, "User opened simulation dialog.");
+            }
+        }
 
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {

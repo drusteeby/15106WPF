@@ -3,11 +3,21 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mcmControls="clr-namespace:MCM.Controls;assembly=MCM"
     xmlns:prism="http://prismlibrary.com/"
+    xmlns:ia="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:lightcmd="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Platform"
     x:Class="Tecmosa.Shell"
     Title="ExampleApplication" 
     SizeToContent="WidthAndHeight"
     WindowStartupLocation="CenterScreen"
     >
+    <ia:Interaction.Triggers>
+        <ia:EventTrigger EventName="PreviewKeyDown">
+            <lightcmd:EventToCommand PassEventArgsToCommand="True" Command="{Binding KeyPressCommand}"/>
+        </ia:EventTrigger>
+        <ia:EventTrigger EventName="KeyDown">
+            <lightcmd:EventToCommand PassEventArgsToCommand="True" Command="{Binding KeyPressCommand}"/>
+        </ia:EventTrigger>
+    </ia:Interaction.Triggers>
     <Grid Name="mainGrid" Height="1024">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
