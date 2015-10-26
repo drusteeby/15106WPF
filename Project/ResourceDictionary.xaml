@@ -1,6 +1,66 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:Tecmosa">
+                    xmlns:local="clr-namespace:Tecmosa"
+                    xmlns:results="clr-namespace:Tecmosa.Results"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    
+    <results:GroupBoxHeaderConverter x:Key="groupBoxHeaderConverter"/>
+    
+    <Style x:Key="TextBlockDefault" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Microsoft Sans Serif"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="5"/>
+    </Style>
+
+    <Style x:Key="greyout" TargetType="TextBlock" BasedOn="{StaticResource TextBlockDefault}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Text" Value="{Binding Value}"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Value}">
+                <DataTrigger.Value>
+                    <sys:Double>NaN</sys:Double>
+                </DataTrigger.Value>
+                <DataTrigger.Setters>
+                    <Setter Property="Foreground" Value="LightGray"/>
+                    <Setter Property="Text" Value="No Result"/>
+                </DataTrigger.Setters>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SigmaValue}">
+                <DataTrigger.Value>
+                    <sys:Double>NaN</sys:Double>
+                </DataTrigger.Value>
+                <DataTrigger.Setters>
+                    <Setter Property="Foreground" Value="LightGray"/>
+                </DataTrigger.Setters>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <DataTemplate x:Key="DefaultTemplate">
+        <GroupBox Header="{Binding Name, Converter={StaticResource groupBoxHeaderConverter}}">
+            <TextBlock  Style="{StaticResource greyout}"/>
+        </GroupBox>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ResultWithSigma">
+        <Grid Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+
+            <DockPanel Grid.Column="1" Name="sigmaBorder" Visibility="Collapsed"  HorizontalAlignment="Stretch">
+                <Line DockPanel.Dock="Left" VerticalAlignment="Stretch" Name="SigmaLine" Stroke="LightGray" StrokeThickness="2" Margin="0,0,0,-3"></Line>
+                <TextBlock DockPanel.Dock="Left" 
+                           Style="{StaticResource greyout}"
+                           Text="{Binding SigmaValue}"/>
+            </DockPanel>
+        </Grid>
+    </DataTemplate>
 
     <DataTemplate x:Key="headerCellTemplate">        
         <Border BorderBrush="Black" BorderThickness="2">

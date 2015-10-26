@@ -2,13 +2,17 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
 namespace Tecmosa.Results
 {
+    [Serializable]
     public class ResultPageViewModel: DependencyObject
     {
 
@@ -19,7 +23,6 @@ namespace Tecmosa.Results
 
             foreach (string testPointName in Model.GetUniqueTestPointNames())
                 TestPoints.Add(new TestPointViewModel(testPointName));
-
 
         }
 

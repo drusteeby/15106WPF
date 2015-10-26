@@ -1,12 +1,14 @@
-﻿<Application x:Class="Tecmosa.App"
+﻿<Application
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Tecmosa">
+             xmlns:local="clr-namespace:Tecmosa" xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.ResultPageViewModelSampleDataSampleDataSource" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Tecmosa.App"
+             >
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="C:\Users\dsteeby\Documents\Projects\HMI\15106 WPF\Project\ResourceDictionary.xaml"/>
+                <ResourceDictionary Source="../ResourceDictionary.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+            <SampleData:ResultPageViewModel x:Key="ResultPageViewModelSampleDataSampleDataSource" d:IsDataSource="True"/>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

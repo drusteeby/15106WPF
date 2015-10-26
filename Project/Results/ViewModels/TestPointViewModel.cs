@@ -9,13 +9,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
+using System.Xml.Serialization;
 
 namespace Tecmosa.Results
 {
+    [Serializable]
     public class TestPointViewModel: DependencyObject
     {
         ListCollectionView _view;
+
+        [XmlIgnore]
         public DelegateCommand ToggleLiveGrouping { get; set; }
+
+        public TestPointViewModel() { } //default parameterless constructor
+
+
         public TestPointViewModel(string name)
         {
             Name = name;
@@ -25,7 +33,10 @@ namespace Tecmosa.Results
             ToggleLiveGrouping = new DelegateCommand(OnToggleLiveGrouping);
 
             foreach (DataTag tag in Model.GetTagsByTestPoint(Name))
-                Results.Add(new ResultViewModel(tag));
+            {
+                if(!tag.Name.ToLower().Contains("sigma"))
+                    Results.Add(new ResultViewModel(tag));
+            }
 
             _view = CollectionViewSource.GetDefaultView(Results) as ListCollectionView;
 
@@ -34,7 +45,7 @@ namespace Tecmosa.Results
             _view.GroupDescriptions.Add(new PropertyGroupDescription("Name", new GroupResultByName()));
         }
 
-
+      
         private void OnToggleLiveGrouping()
         {
             _view.IsLiveGrouping = !_view.IsLiveGrouping;

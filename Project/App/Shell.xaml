@@ -2,7 +2,6 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mcmControls="clr-namespace:MCM.Controls;assembly=MCM"
-    xmlns:results="clr-namespace:Tecmosa.Controls.ResultData"
     xmlns:prism="http://prismlibrary.com/"
     x:Class="Tecmosa.Shell"
     Title="ExampleApplication" 

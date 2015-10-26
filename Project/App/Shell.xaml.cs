@@ -17,6 +17,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Tecmosa.Results;
 using Winforms = System.Windows.Forms;
 
 namespace Tecmosa
@@ -38,6 +39,10 @@ namespace Tecmosa
         {
             InitializeComponent();
             RegionManager.RegisterViewWithRegion("MainRegion", typeof(Results.ResultPage));
+
+
+
+
             //transform.ScaleX = 1;
             //transform.ScaleY = 1;
 
