@@ -5,45 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Tecmosa.Results"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300" d:DataContext="{d:DesignData /SampleData/ResultPageViewModelSampleData.xaml}">
-    <UserControl.Resources>
-        <local:StringAddSpaceToCapsConverter x:Key="CapsSpace"/>
-        <local:ResultTemplateSelector x:Key="resultTemplateSelector" DefaultTemplate="{StaticResource DefaultTemplate}"/>
-    </UserControl.Resources>
-    <ItemsControl ItemsSource="{Binding TestPoints}" Background="White" Margin="5,5,-450.792,0" d:DataContext="{Binding Source={StaticResource ResultPageViewModelSampleDataSampleDataSource}}" >
+             Background="LightSteelBlue"
+             d:DesignHeight="300" d:DesignWidth="853.125" d:DataContext="{d:DesignData /SampleData/ResultPageViewModelSampleData.xaml}">
+    <ItemsControl ItemsSource="{Binding TestPoints}" 
+                  ItemTemplate="{StaticResource TestPointListTemplate}"
+                  Background="Transparent" Margin="5,5,0,0" 
+                  d:DataContext="{Binding Source={StaticResource ResultPageViewModelSampleDataSampleDataSource}}" >
         <ItemsControl.ItemsPanel>
             <ItemsPanelTemplate>
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Top"/>
             </ItemsPanelTemplate>
         </ItemsControl.ItemsPanel>
-        <ItemsControl.ItemTemplate>
-            <DataTemplate>
-                <StackPanel Margin="5">
-                    <Border BorderBrush="Black" BorderThickness="2"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                        <TextBlock Text="{Binding Name, Converter={StaticResource CapsSpace}}" 
-                                   FontSize="20"
-                                    Background="White"
-                                    FontWeight="Bold"
-                                    FontFamily="Microsoft Sans Serif"
-                                    TextAlignment="Center"
-                                    HorizontalAlignment="Stretch"
-                                    VerticalAlignment="Center"
-                                    Margin="5"        />
-                    </Border>
-                    <ItemsControl Grid.IsSharedSizeScope="True" ItemsSource="{Binding Results}" 
-                                                                ItemTemplateSelector="{StaticResource resultTemplateSelector}">
-                        <ItemsControl.GroupStyle>
-                            <GroupStyle>
-                                <GroupStyle.HeaderTemplate>
-                                    <DataTemplate>
-                                        <TextBlock Text="{Binding Name,Converter={StaticResource CapsSpace}}" Background="LightBlue" Foreground="White"/>
-                                    </DataTemplate>
-                                </GroupStyle.HeaderTemplate>
-                            </GroupStyle>
-                        </ItemsControl.GroupStyle>
-                    </ItemsControl>
-                </StackPanel>
-            </DataTemplate>
-        </ItemsControl.ItemTemplate>
     </ItemsControl>
 </UserControl>

@@ -17,7 +17,7 @@ namespace Tecmosa.Results
 
             if (header.Contains("ccpilot")) return "CC Pilot";
             else if (header.Contains("pilot")) return "Pilot";
-            else if (header.Contains("main")) return "CC Pilot";
+            else if (header.Contains("main")) return "Main";
             else if (header.Contains("post")) return "Post";
             else return Regex.Replace((value as string).Split('.').Last(), "[A-Z]", " $0");
         }

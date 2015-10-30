@@ -7,7 +7,7 @@
 	<SampleData:ResultPageViewModel.TestPoints>
 		<SampleData:TestPointViewModel Name="TestPoint1">
 			<SampleData:TestPointViewModel.Results>
-				<SampleData:ResultViewModel HasMax="False" HasMin="False" HasSigma="False" Name="TestPoint1.CamSpeed" Value="NaN" SigmaValue="0" MaxValue="0" MinValue="0"/>
+				<SampleData:ResultViewModel HasMax="False" HasMin="False" HasSigma="False" Name="TestPoint1.CamSpeed" Value="150" SigmaValue="20" MaxValue="200" MinValue="100"/>
 				<SampleData:ResultViewModel HasMax="True" HasMin="True" HasSigma="True" Name="TestPoint1.DischargePilot" Value="NaN" SigmaValue="0" MaxValue="0" MinValue="0"/>
 				<SampleData:ResultViewModel HasMax="True" HasMin="True" HasSigma="True" Name="TestPoint1.DischargeCCPilot" Value="NaN" SigmaValue="0" MaxValue="0" MinValue="0"/>
 				<SampleData:ResultViewModel HasMax="True" HasMin="True" HasSigma="True" Name="TestPoint1.DischargeMain" Value="NaN" SigmaValue="0" MaxValue="0" MinValue="0"/>

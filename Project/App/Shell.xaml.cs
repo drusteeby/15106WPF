@@ -40,14 +40,14 @@ namespace Tecmosa
 
         public DelegateCommand<KeyEventArgs> KeyPressCommand { get; set; }
 
-
+        IRegionManager _regionManager;
 
         public Shell(IRegionManager RegionManager)
         {
             InitializeComponent();
-
-            FormExtender.MainForm = mainScreen;
-            System.Windows.Forms.Application.Run(FormExtender.MainForm);
+            _regionManager = RegionManager;
+            //textbx.GotKeyboardFocus += Textbx_GotKeyboardFocus;
+            //textbx.LostKeyboardFocus += Textbx_LostKeyboardFocus;
 
             RegionManager.RegisterViewWithRegion("MainRegion", typeof(Results.ResultPage));
 
@@ -73,6 +73,18 @@ namespace Tecmosa
             mainGrid.Background = new ImageBrush(bi);
             this.Focus();
 
+        }
+
+        private void Textbx_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            //(_regionManager.Regions["WindowRegion"] as Window).Close();
+        }
+
+        private void Textbx_GotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            _regionManager.Regions["WindowRegion"].Context = (sender as TextBox);
+            _regionManager.RegisterViewWithRegion("WindowRegion", typeof(Controls.NumPad));
+            _regionManager.RequestNavigate("WindowRegion", typeof(Controls.NumPad).ToString());
         }
 
         private void KeyPressed(object sender, KeyEventArgs e)

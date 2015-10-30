@@ -5,6 +5,7 @@ using MCM.Core.Tags;
 using MCM.Core.Comm;
 using System;
 using MCM.Controls;
+using Prism.Regions;
 
 namespace Tecmosa
 {
@@ -93,6 +94,19 @@ namespace Tecmosa
         protected override void ConfigureModuleCatalog()
         {
             base.ConfigureModuleCatalog();
+        }
+
+        protected override RegionAdapterMappings ConfigureRegionAdapterMappings()
+        {
+
+            RegionAdapterMappings regionAdapterMappings = Container.TryResolve<RegionAdapterMappings>();
+
+            if (regionAdapterMappings != null)
+            {
+                regionAdapterMappings.RegisterMapping(typeof(Window), new WindowRegionAdapter(Container.TryResolve<IRegionBehaviorFactory>()));
+            }
+
+            return base.ConfigureRegionAdapterMappings();
         }
     }
 }

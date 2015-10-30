@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="Tecmosa.Results.Views.ResultView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tecmosa.Results.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300">
+
+    <Border Background="{StaticResource DullBlue}" Margin="5" CornerRadius="8">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0"
+                       Text="{Binding Name,Converter={StaticResource groupBoxHeaderConverter}}"
+                       Margin="3"
+                       Foreground="{StaticResource GrayWhite}"
+                       FontFamily="Microsoft Sans Serif"
+                       FontSize="16"/>
+
+            <Grid Grid.Row="1" Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Orientation="Horizontal">
+                    <TextBlock Text="Min:" FontSize="10"/>
+                    <TextBlock  Text="{Binding MinValue}" FontSize="10"/>
+                </StackPanel>
+                <StackPanel Grid.Column="2" Orientation="Horizontal">
+                    <TextBlock Text="Max:" FontSize="10"/>
+                    <TextBlock  Text="{Binding MaxValue}" FontSize="10"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+    </Border>
+</UserControl>

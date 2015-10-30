@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Forms.Integration;
 
 namespace Tecmosa
 {
@@ -13,9 +14,10 @@ namespace Tecmosa
     /// </summary>
     public partial class App : Application
     {
-        [STAThread]
+        
         protected override void OnStartup(StartupEventArgs e)
         {
+            
             base.OnStartup(e);
 
             // The boostrapper will create the Shell instance, so the App.xaml does not have a StartupUri.

@@ -19,7 +19,7 @@ namespace Tecmosa.Results
 
             var vm = (ResultViewModel)item;
 
-            
+            if (vm.HasSigma) return SigmaTemplate;
 
             return DefaultTemplate;
 
