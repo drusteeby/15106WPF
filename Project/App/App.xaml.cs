@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms.Integration;
+using Tecmosa.Controls.Results.Helpers;
 
 namespace Tecmosa
 {

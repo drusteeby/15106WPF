@@ -29,7 +29,7 @@ namespace Tecmosa
 
             //Start the Vector Comm
             DataTag vectorEnable = TagCollection.Get("Vector");
-            vectorEnable.ValueChanged += vectorEnable_ValueChanged;
+            //vectorEnable.ValueChanged += vectorEnable_ValueChanged;
 
             // Start the PLC Comm.
             DataTag plcIp = TagCollection.Get("PLC");

@@ -8,7 +8,8 @@
     xmlns:lightcmd="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Platform"
     x:Class="Tecmosa.Shell"
     Title="ExampleApplication" 
-    SizeToContent="WidthAndHeight"
+    Height="1024"
+    Width="1280"
     WindowStartupLocation="CenterScreen"
     prism:RegionManager.RegionName="WindowRegion"
     >
@@ -20,23 +21,17 @@
             <lightcmd:EventToCommand PassEventArgsToCommand="True" Command="{Binding KeyPressCommand}"/>
         </ia:EventTrigger>
     </ia:Interaction.Triggers>
-    <Grid Name="mainGrid" Height="1024" Background="LightGray">
+    <Grid Name="mainGrid" Background="LightGray">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <WindowsFormsHost Width="1280">
-            <mcmControls:MainScreen x:Name="mainScreen"
-                                    TopLevel="False"
-                                    
-                                    />
-        </WindowsFormsHost>
-
-        <ScrollViewer HorizontalContentAlignment="Stretch" Grid.Row="1">
-            <ContentControl prism:RegionManager.RegionName="MainRegion" />
-        </ScrollViewer>
-
-
+        
+        <ContentControl Grid.Row="0" prism:RegionManager.RegionName="HeaderRegion"/>
+        <ContentControl Grid.Row="1" prism:RegionManager.RegionName="MainRegion" />
+        <ContentControl Grid.RowSpan="2" prism:RegionManager.RegionName="PopupRegion" 
+                        Background="Black" Opacity="0.5"
+                        />
 
     </Grid>
 </Window>

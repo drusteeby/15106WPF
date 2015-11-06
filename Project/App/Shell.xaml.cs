@@ -1,4 +1,5 @@
-﻿using MCM.Controls;
+﻿using CoreControlsWPF;
+using MCM.Controls;
 using MCM.Core.Controls;
 using MCM.Core.Logging;
 using Microsoft.Practices.Prism.Commands;
@@ -20,7 +21,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Tecmosa.Results;
+using Tecmosa.Controls.Results.Views;
 using Winforms = System.Windows.Forms;
 
 namespace Tecmosa
@@ -49,7 +50,7 @@ namespace Tecmosa
             //textbx.GotKeyboardFocus += Textbx_GotKeyboardFocus;
             //textbx.LostKeyboardFocus += Textbx_LostKeyboardFocus;
 
-            RegionManager.RegisterViewWithRegion("MainRegion", typeof(Results.ResultPage));
+            RegionManager.RegisterViewWithRegion("MainRegion",typeof(Tecmosa.Pages.MainScreen));
 
             KeyPressCommand = new DelegateCommand<KeyEventArgs>(OnKeyPressed);
             AddHandler(Keyboard.KeyDownEvent, (KeyEventHandler)KeyPressed);
@@ -61,17 +62,19 @@ namespace Tecmosa
             //_mainScreenWidth = winFormsHost.Width = mainScreen.Width;
             //_mainScreenHeight = winFormsHost.Height = mainScreen.Height;
 
-
+            
             MemoryStream ms = new MemoryStream();
-            mainScreen.BackgroundImage.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+            new MainScreen().BackgroundImage.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
             ms.Position = 0;
             BitmapImage bi = new BitmapImage();
             bi.BeginInit();
             bi.StreamSource = ms;
             bi.EndInit();
+            
 
             mainGrid.Background = new ImageBrush(bi);
             this.Focus();
+            
 
         }
 
@@ -96,10 +99,10 @@ namespace Tecmosa
         {
             if ((e.Key == Key.F5) && (Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control)
             {
-                DataSimulator simulator = new DataSimulator();
-                mainScreen.AddOwnedForm(simulator);
-                simulator.Visible = true;
-                Log.Add(Log.Type.UserAction, "User opened simulation dialog.");
+                //DataSimulator simulator = new DataSimulator();
+                //mainScreen.AddOwnedForm(simulator);
+                //simulator.Visible = true;
+                //Log.Add(Log.Type.UserAction, "User opened simulation dialog.");
             }
         }
 

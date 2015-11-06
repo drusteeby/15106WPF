@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Collections.Specialized;
 using Prism.Regions;
+using System.Windows.Input;
 
 namespace Tecmosa
 {
@@ -74,6 +75,8 @@ namespace Tecmosa
                 window.SizeToContent = SizeToContent.WidthAndHeight;
                 window.Width = SystemParameters.PrimaryScreenWidth / 3;
                 window.Height = SystemParameters.PrimaryScreenHeight / 3;
+                window.Left = Mouse.GetPosition(Application.Current.MainWindow).X;
+                window.Top = Mouse.GetPosition(Application.Current.MainWindow).Y;
                 window.ResizeMode = ResizeMode.NoResize;
                 window.WindowStyle = System.Windows.WindowStyle.ToolWindow;
                 window.WindowStartupLocation = WindowStartupLocation.CenterScreen;

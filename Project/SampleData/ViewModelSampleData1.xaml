@@ -1,0 +1,17 @@
+﻿<LiveData:ViewModel xmlns:LiveData="clr-namespace:Tecmosa.Controls.LiveData" xmlns:Commands="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism.Mvvm">
+	<LiveData:ViewModel.LiveDataList>
+		<LiveData:LiveDataTagViewModel Name="Nam maecenas" Value="123456"/>
+        <LiveData:LiveDataTagViewModel Name="Curabitur adipiscing" Value="123456"/>
+        <LiveData:LiveDataTagViewModel Name="Convallis cras dignissim" Value="123456"/>
+        <LiveData:LiveDataTagViewModel Name="Est nunc hac leo aliquam" Value="123456"/>
+        <LiveData:LiveDataTagViewModel Name="Bibendum dictumst" Value="123456"/>
+        <LiveData:LiveDataTagViewModel Name="Vestibulum non quisque facilisis nullam" Value="123456"/>
+        <LiveData:LiveDataTagViewModel Name="Vivamus facilisi aliquam" Value="123456"/>
+        <LiveData:LiveDataTagViewModel Name="Sem sit" Value="123456"/>
+        <LiveData:LiveDataTagViewModel Name="Vel dictum fringilla amet" Value="123456"/>
+        <LiveData:LiveDataTagViewModel Name="Habitasse hendrerit" Value="123456"/>
+	</LiveData:ViewModel.LiveDataList>
+	<LiveData:ViewModel.PlusButtonCommand>
+		<Commands:DelegateCommand IsActive="True"/>
+	</LiveData:ViewModel.PlusButtonCommand>
+</LiveData:ViewModel>

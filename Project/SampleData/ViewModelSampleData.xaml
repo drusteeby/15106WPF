@@ -1,0 +1,297 @@
+﻿<LiveData:ViewModel xmlns:LiveData="clr-namespace:Tecmosa.Controls.LiveData" xmlns:Helpers="clr-namespace:Tecmosa.Controls.Helpers" xmlns:Tags="clr-namespace:MCM.Core.Tags;assembly=MCM" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:Commands="clr-namespace:Microsoft.Practices.Prism.Commands;assembly=Microsoft.Practices.Prism.Mvvm">
+	<LiveData:ViewModel.LiveDataList>
+		<Helpers:DataTagNotifyPropertyChanged>
+			<Helpers:DataTagNotifyPropertyChanged.Tag>
+				<Tags:DataTag BaseText="Placerat pulvinar montes nam sagittis" Bool="False" CurrentLanguage="Class cras vestibulum" CurrentUom="NA" DataType="Bits" Date="11/05/2015 17:19:29" Description="Vel pharetra quis" Double="481.63" DebugPage="Lacus nisl vestibulum sed penatibus" Int="48" InRange="True" LastDouble="853.02" LastInt="42" LastText="Blandit lorem sed" Max="139.49" Min="525.48" Name="Enim dolor leo" OriginalName="Vestibulum eleifend himenaeos imperdiet adipiscing" ReadName="Erat vestibulum" RoundMetric="26" ReadIndex="52" Rounding="45" ReadAddr="Justo aliquet magnis mattis per" RoundUs="41" ReadFrom="Libero fames dictumst mus" SendIndex="95" SendName="Eros adipiscing parturient" SendAddr="Malesuada parturient facilisi nisi" Text="Vulputate urna" UnitsMetric="Vestibulum est suscipit" Units="Commodo nostra senectus dis sociosqu" UnitsUs="Conubia curabitur">
+					<Tags:DataTag.EventTime>
+						<System:TimeSpan/>
+					</Tags:DataTag.EventTime>
+					<Tags:DataTag.Float>
+						<System:Single/>
+					</Tags:DataTag.Float>
+					<Tags:DataTag.Group>
+						<System:String>Nunc faucibus porttitor</System:String>
+						<System:String>Sem tincidunt habitant</System:String>
+						<System:String>Odio inceptos tristique mauris interdum</System:String>
+						<System:String>Ultricies venenatis lobortis nascetur orci</System:String>
+						<System:String>Pede mollis quam sit</System:String>
+					</Tags:DataTag.Group>
+					<Tags:DataTag.Parent>
+						<Tags:DataTag BaseText="Facilisis nulla diam" Bool="False" CurrentLanguage="Curabitur aenean" CurrentUom="Metric" DataType="Boolean" Date="11/05/2015 17:19:29" Description="Vestibulum dis morbi" Double="361.19" DebugPage="Vestibulum praesent dictum" Int="95" InRange="True" LastDouble="319.77" LastInt="81" LastText="Parturient eget quisque" Max="954.31" Min="813.41" Name="Phasellus nam mauris adipiscing nullam" OriginalName="Sed aliquam" ReadName="Curae aptent duis donec auctor" RoundMetric="85" ReadIndex="36" Rounding="48" ReadAddr="Arcu convallis dignissim" RoundUs="13" ReadFrom="Nunc lorem maecenas amet ante" SendIndex="31" SendName="Consequat etiam fusce" SendAddr="Integer elementum congue cursus parturient" Text="Proin adipiscing" UnitsMetric="Est accumsan vivamus bibendum augue" Units="Lectus vestibulum fermentum" UnitsUs="Elit hac fringilla"/>
+					</Tags:DataTag.Parent>
+					<Tags:DataTag.SendList>
+						<System:String>Habitasse nibh</System:String>
+						<System:String>Nec ligula</System:String>
+						<System:String>Vestibulum litora</System:String>
+						<System:String>Hendrerit felis non luctus</System:String>
+						<System:String>Aliquam ipsum</System:String>
+					</Tags:DataTag.SendList>
+				</Tags:DataTag>
+			</Helpers:DataTagNotifyPropertyChanged.Tag>
+		</Helpers:DataTagNotifyPropertyChanged>
+		<Helpers:DataTagNotifyPropertyChanged>
+			<Helpers:DataTagNotifyPropertyChanged.Tag>
+				<Tags:DataTag BaseText="Viverra dis" Bool="False" CurrentLanguage="Hac torquent magna" CurrentUom="Metric" DataType="Decimal" Date="11/05/2015 17:19:29" Description="Morbi tristique mauris" Double="261.76" DebugPage="Elit vestibulum" Int="16" InRange="True" LastDouble="414.92" LastInt="61" LastText="Vestibulum eros dolor est" Max="525.96" Min="347.92" Name="Vel facilisis laoreet" OriginalName="Inceptos malesuada interdum lobortis" ReadName="Velit dictumst" RoundMetric="78" ReadIndex="21" Rounding="21" ReadAddr="Posuere eget" RoundUs="87" ReadFrom="Facilisi vitae arcu parturient vestibulum" SendIndex="30" SendName="Eleifend nam" SendAddr="Potenti pretium penatibus taciti porttitor" Text="Nulla proin augue" UnitsMetric="Ultricies aliquam adipiscing felis nisi" Units="Fames nullam nibh" UnitsUs="Venenatis nisl ipsum justo">
+					<Tags:DataTag.EventTime>
+						<System:TimeSpan/>
+					</Tags:DataTag.EventTime>
+					<Tags:DataTag.Float>
+						<System:Single/>
+					</Tags:DataTag.Float>
+					<Tags:DataTag.Group>
+						<System:String>Nascetur etiam</System:String>
+						<System:String>Rhoncus tellus fusce</System:String>
+						<System:String>Pharetra tempor tempus tortor tincidunt</System:String>
+						<System:String>Turpis placerat lorem</System:String>
+						<System:String>Varius enim aenean erat sodales</System:String>
+					</Tags:DataTag.Group>
+					<Tags:DataTag.Parent>
+						<Tags:DataTag BaseText="Dignissim gravida sed vestibulum" Bool="False" CurrentLanguage="Adipiscing massa leo parturient mus" CurrentUom="Metric" DataType="Byte" Date="11/05/2015 17:19:29" Description="Praesent feugiat vestibulum per" Double="953.47" DebugPage="Amet parturient rutrum sapien" Int="34" InRange="True" LastDouble="487.27" LastInt="36" LastText="Porta iaculis" Max="425.82" Min="453.12" Name="Phasellus consequat vestibulum ultrices cubilia" OriginalName="Morbi maecenas duis neque nec" ReadName="Ornare cras" RoundMetric="35" ReadIndex="52" Rounding="28" ReadAddr="Nunc egestas primis non netus" RoundUs="70" ReadFrom="Vestibulum volutpat convallis" SendIndex="77" SendName="Metus platea vehicula dapibus" SendAddr="Euismod adipiscing" Text="Elementum nulla adipiscing" UnitsMetric="Accumsan sem purus risus lacinia" Units="Semper ante" UnitsUs="Bibendum sit"/>
+					</Tags:DataTag.Parent>
+					<Tags:DataTag.SendList>
+						<System:String>Vestibulum adipiscing</System:String>
+						<System:String>Sed faucibus parturient fermentum habitant</System:String>
+						<System:String>Class sociis fringilla curae donec</System:String>
+						<System:String>Habitasse natoque diam</System:String>
+						<System:String>Hendrerit himenaeos imperdiet</System:String>
+					</Tags:DataTag.SendList>
+				</Tags:DataTag>
+			</Helpers:DataTagNotifyPropertyChanged.Tag>
+		</Helpers:DataTagNotifyPropertyChanged>
+		<Helpers:DataTagNotifyPropertyChanged>
+			<Helpers:DataTagNotifyPropertyChanged.Tag>
+				<Tags:DataTag BaseText="Euismod class" Bool="False" CurrentLanguage="Nunc parturient odio vestibulum lacus" CurrentUom="NA" DataType="EnumDecimal" Date="11/05/2015 17:19:29" Description="Non faucibus" Double="216.2" DebugPage="Conubia nostra bibendum velit mus" Int="14" InRange="True" LastDouble="305.63" LastInt="35" LastText="Habitant curae donec tincidunt" Max="168.91" Min="614.56" Name="Torquent arcu" OriginalName="Purus maecenas risus" ReadName="Luctus facilisis magnis aliquet" RoundMetric="39" ReadIndex="47" Rounding="83" ReadAddr="Commodo adipiscing parturient vestibulum" RoundUs="30" ReadFrom="Mattis fringilla" SendIndex="96" SendName="Vel nam fermentum sed blandit" SendAddr="Praesent vestibulum elit accumsan malesuada" Text="Porttitor feugiat" UnitsMetric="Fusce per ultricies primis" Units="Etiam tristique" UnitsUs="Sed rutrum vestibulum sem">
+					<Tags:DataTag.EventTime>
+						<System:TimeSpan/>
+					</Tags:DataTag.EventTime>
+					<Tags:DataTag.Float>
+						<System:Single/>
+					</Tags:DataTag.Float>
+					<Tags:DataTag.Group>
+						<System:String>Penatibus dictumst ornare cubilia</System:String>
+						<System:String>Eleifend facilisi enim dapibus</System:String>
+						<System:String>Platea egestas</System:String>
+						<System:String>Adipiscing vitae</System:String>
+						<System:String>Erat parturient nec</System:String>
+					</Tags:DataTag.Group>
+					<Tags:DataTag.Parent>
+						<Tags:DataTag BaseText="Parturient convallis" Bool="False" CurrentLanguage="Pulvinar lorem hac sagittis vulputate" CurrentUom="Metric" DataType="Boolean" Date="11/05/2015 17:19:29" Description="Consequat amet lectus libero" Double="365.62" DebugPage="Cras duis morbi adipiscing nunc" Int="53" InRange="True" LastDouble="283.91" LastInt="48" LastText="Vestibulum sed" Max="355.71" Min="704.01" Name="Integer magna aptent leo orci" OriginalName="Cursus phasellus quam" ReadName="Massa pede mus" RoundMetric="89" ReadIndex="59" Rounding="96" ReadAddr="Quis vestibulum" RoundUs="67" ReadFrom="Quisque non congue" SendIndex="79" SendName="Curabitur metus nec auctor" SendAddr="Senectus urna vivamus per dictum" Text="Neque aliquam sociosqu" UnitsMetric="Ligula ante" Units="Dignissim netus sem nulla suscipit" UnitsUs="Litora vestibulum elementum sit adipiscing"/>
+					</Tags:DataTag.Parent>
+					<Tags:DataTag.SendList>
+						<System:String>Dis est hac ultrices diam</System:String>
+						<System:String>Porta mauris eget parturient</System:String>
+						<System:String>Vestibulum habitasse</System:String>
+						<System:String>Mollis hendrerit vehicula volutpat</System:String>
+						<System:String>Vestibulum himenaeos leo montes imperdiet</System:String>
+					</Tags:DataTag.SendList>
+				</Tags:DataTag>
+			</Helpers:DataTagNotifyPropertyChanged.Tag>
+		</Helpers:DataTagNotifyPropertyChanged>
+		<Helpers:DataTagNotifyPropertyChanged>
+			<Helpers:DataTagNotifyPropertyChanged.Tag>
+				<Tags:DataTag BaseText="Cursus imperdiet nam commodo" Bool="False" CurrentLanguage="Lorem vestibulum eros" CurrentUom="NA" DataType="Boolean" Date="11/05/2015 17:19:29" Description="Congue cras duis nulla" Double="792.44" DebugPage="Vestibulum suscipit integer habitasse" Int="72" InRange="True" LastDouble="530.3" LastInt="59" LastText="Dictum cubilia amet porttitor" Max="483.82" Min="969.59" Name="Tempus justo hac nunc tortor" OriginalName="Vestibulum senectus metus non viverra" ReadName="Leo lacus" RoundMetric="34" ReadIndex="86" Rounding="69" ReadAddr="Pede aliquam quam per sociosqu" RoundUs="24" ReadFrom="Parturient mauris magna" SendIndex="10" SendName="Lorem turpis varius aenean" SendAddr="Sed sem quis sit fringilla" Text="Sed malesuada penatibus nunc conubia" UnitsMetric="Arcu porta tincidunt" Units="Parturient ante ultrices lectus dis" UnitsUs="Est dapibus vehicula vestibulum">
+					<Tags:DataTag.EventTime>
+						<System:TimeSpan/>
+					</Tags:DataTag.EventTime>
+					<Tags:DataTag.Float>
+						<System:Single/>
+					</Tags:DataTag.Float>
+					<Tags:DataTag.Group>
+						<System:String>Morbi quisque hendrerit vivamus</System:String>
+						<System:String>Vel urna aliquam</System:String>
+						<System:String>Torquent adipiscing</System:String>
+						<System:String>Neque aliquet himenaeos</System:String>
+						<System:String>Netus auctor blandit</System:String>
+					</Tags:DataTag.Group>
+					<Tags:DataTag.Parent>
+						<Tags:DataTag BaseText="Natoque phasellus" Bool="False" CurrentLanguage="Inceptos sit" CurrentUom="NA" DataType="Integer" Date="11/05/2015 17:19:29" Description="Fames adipiscing pharetra nisl" Double="216.03" DebugPage="Sed curabitur vestibulum" Int="98" InRange="True" LastDouble="783.98" LastInt="27" LastText="Parturient ipsum posuere potenti taciti" Max="877.71" Min="598.51" Name="Vel adipiscing gravida morbi" OriginalName="Nibh sociis nisi" ReadName="Nam nulla interdum proin iaculis" RoundMetric="45" ReadIndex="41" Rounding="55" ReadAddr="Nascetur dolor" RoundUs="92" ReadFrom="Vulputate augue sapien semper" SendIndex="92" SendName="Lobortis venenatis" SendAddr="Parturient vestibulum lacinia laoreet" Text="Felis consequat placerat dis" UnitsMetric="Est pretium convallis vestibulum" Units="Pulvinar tellus" UnitsUs="Tempor vestibulum adipiscing dignissim"/>
+					</Tags:DataTag.Parent>
+					<Tags:DataTag.SendList>
+						<System:String>Mus vestibulum sagittis elementum nec</System:String>
+						<System:String>Nullam facilisis odio</System:String>
+						<System:String>Fermentum aptent</System:String>
+						<System:String>Massa orci rhoncus sodales vestibulum</System:String>
+						<System:String>Adipiscing parturient</System:String>
+					</Tags:DataTag.SendList>
+				</Tags:DataTag>
+			</Helpers:DataTagNotifyPropertyChanged.Tag>
+		</Helpers:DataTagNotifyPropertyChanged>
+		<Helpers:DataTagNotifyPropertyChanged>
+			<Helpers:DataTagNotifyPropertyChanged.Tag>
+				<Tags:DataTag BaseText="Fringilla rhoncus" Bool="False" CurrentLanguage="Libero vestibulum" CurrentUom="US" DataType="EnumDecimal" Date="11/05/2015 17:19:29" Description="Sociis per" Double="147.81" DebugPage="Nunc pulvinar odio vestibulum" Int="94" InRange="True" LastDouble="358.74" LastInt="48" LastText="Vestibulum sem habitasse hendrerit" Max="833.88" Min="396.41" Name="Sem lacinia" OriginalName="Pharetra posuere potenti nulla" ReadName="Vestibulum laoreet donec natoque phasellus" RoundMetric="74" ReadIndex="26" Rounding="36" ReadAddr="Platea proin placerat" RoundUs="15" ReadFrom="Etiam fusce" SendIndex="95" SendName="Adipiscing consequat parturient convallis" SendAddr="Primis hac" Text="Sodales quam viverra sed senectus" UnitsMetric="Taciti quis himenaeos imperdiet" Units="Sit adipiscing aliquam" UnitsUs="Integer dolor parturient vel">
+					<Tags:DataTag.EventTime>
+						<System:TimeSpan/>
+					</Tags:DataTag.EventTime>
+					<Tags:DataTag.Float>
+						<System:Single/>
+					</Tags:DataTag.Float>
+					<Tags:DataTag.Group>
+						<System:String>Pretium adipiscing</System:String>
+						<System:String>Leo mus fermentum</System:String>
+						<System:String>Parturient rutrum sapien</System:String>
+						<System:String>Nec semper sagittis vestibulum</System:String>
+						<System:String>Orci pede non augue</System:String>
+					</Tags:DataTag.Group>
+					<Tags:DataTag.Parent>
+						<Tags:DataTag BaseText="Vitae facilisi feugiat venenatis nec" Bool="False" CurrentLanguage="Volutpat maecenas praesent" CurrentUom="Metric" DataType="TimeOfDay" Date="11/05/2015 17:19:29" Description="Velit nibh" Double="897.21" DebugPage="Eros risus vestibulum vestibulum litora" Int="29" InRange="True" LastDouble="670.56" LastInt="36" LastText="Parturient gravida magnis" Max="472.99" Min="964.38" Name="Egestas euismod" OriginalName="Leo parturient" ReadName="Accumsan ligula" RoundMetric="26" ReadIndex="11" Rounding="16" ReadAddr="Enim purus mus" RoundUs="92" ReadFrom="Tristique bibendum elit" SendIndex="88" SendName="Diam hac eget adipiscing" SendAddr="Dictumst ultricies erat eleifend" Text="Luctus adipiscing vulputate" UnitsMetric="Nisi mauris per faucibus" Units="Curabitur non iaculis mattis" UnitsUs="Sed class curae vestibulum habitant"/>
+					</Tags:DataTag.Parent>
+					<Tags:DataTag.SendList>
+						<System:String>Vestibulum sit inceptos vel mollis</System:String>
+						<System:String>Montes nostra lorem nam sed</System:String>
+						<System:String>Nisl interdum dis</System:String>
+						<System:String>Ornare dignissim lobortis morbi elementum</System:String>
+						<System:String>Est nascetur facilisis</System:String>
+					</Tags:DataTag.SendList>
+				</Tags:DataTag>
+			</Helpers:DataTagNotifyPropertyChanged.Tag>
+		</Helpers:DataTagNotifyPropertyChanged>
+		<Helpers:DataTagNotifyPropertyChanged>
+			<Helpers:DataTagNotifyPropertyChanged.Tag>
+				<Tags:DataTag BaseText="Litora risus hac duis nunc" Bool="False" CurrentLanguage="Urna fames" CurrentUom="NA" DataType="Decimal" Date="11/05/2015 17:19:29" Description="Ligula est" Double="276.71" DebugPage="Pede vestibulum" Int="43" InRange="True" LastDouble="556.19" LastInt="65" LastText="Amet laoreet leo" Max="452.76" Min="928.3" Name="Magna nec erat" OriginalName="Lectus libero habitant dignissim" ReadName="Eros massa vestibulum venenatis vulputate" RoundMetric="94" ReadIndex="37" Rounding="43" ReadAddr="Adipiscing parturient netus elementum" RoundUs="72" ReadFrom="Parturient dapibus" SendIndex="18" SendName="Non nibh adipiscing eleifend" SendAddr="Facilisis orci inceptos sem" Text="Iaculis pulvinar luctus lacinia" UnitsMetric="Sagittis velit posuere" Units="Habitasse parturient ante natoque" UnitsUs="Vitae vestibulum potenti">
+					<Tags:DataTag.EventTime>
+						<System:TimeSpan/>
+					</Tags:DataTag.EventTime>
+					<Tags:DataTag.Float>
+						<System:Single/>
+					</Tags:DataTag.Float>
+					<Tags:DataTag.Group>
+						<System:String>Sit interdum nulla vel</System:String>
+						<System:String>Nam lobortis porta vestibulum</System:String>
+						<System:String>Quam nascetur quis pharetra placerat</System:String>
+						<System:String>Fermentum sed fringilla</System:String>
+						<System:String>Purus dis urna cras adipiscing</System:String>
+					</Tags:DataTag.Group>
+					<Tags:DataTag.Parent>
+						<Tags:DataTag BaseText="Leo praesent commodo porttitor conubia" Bool="False" CurrentLanguage="Sociosqu nam malesuada tellus" CurrentUom="Metric" DataType="EnumDecimal" Date="11/05/2015 17:19:29" Description="Blandit eget lorem maecenas adipiscing" Double="307.43" DebugPage="Volutpat tortor diam turpis" Int="10" InRange="True" LastDouble="410.65" LastInt="45" LastText="Cubilia parturient mus" Max="928.1" Min="987.78" Name="Felis cras suscipit" OriginalName="Ultrices vivamus dis aliquam amet" ReadName="Duis quisque" RoundMetric="49" ReadIndex="81" Rounding="95" ReadAddr="Aliquet est lacus ante vehicula" RoundUs="80" ReadFrom="Ipsum sed justo vestibulum penatibus" SendIndex="30" SendName="Nunc vestibulum torquent tempor tempus" SendAddr="Arcu hac" Text="Tincidunt accumsan varius aenean" UnitsMetric="Bibendum nullam dictumst vestibulum enim" Units="Elit mauris tristique" UnitsUs="Ultricies aptent auctor"/>
+					</Tags:DataTag.Parent>
+					<Tags:DataTag.SendList>
+						<System:String>Curabitur egestas facilisi metus phasellus</System:String>
+						<System:String>Consequat nisi nisl vestibulum congue</System:String>
+						<System:String>Vestibulum morbi convallis per euismod</System:String>
+						<System:String>Neque cursus sed feugiat</System:String>
+						<System:String>Nunc odio faucibus dictum gravida</System:String>
+					</Tags:DataTag.SendList>
+				</Tags:DataTag>
+			</Helpers:DataTagNotifyPropertyChanged.Tag>
+		</Helpers:DataTagNotifyPropertyChanged>
+		<Helpers:DataTagNotifyPropertyChanged>
+			<Helpers:DataTagNotifyPropertyChanged.Tag>
+				<Tags:DataTag BaseText="Non justo lacus" Bool="False" CurrentLanguage="Class arcu pretium senectus" CurrentUom="US" DataType="Byte" Date="11/05/2015 17:19:29" Description="Feugiat vestibulum nec" Double="695.75" DebugPage="Dolor quam convallis fames" Int="99" InRange="True" LastDouble="340.53" LastInt="76" LastText="Per facilisis magna duis nunc" Max="244.99" Min="114.13" Name="Venenatis lorem" OriginalName="Proin praesent orci" ReadName="Nisl volutpat sit" RoundMetric="38" ReadIndex="17" Rounding="23" ReadAddr="Pede dapibus" RoundUs="24" ReadFrom="Commodo nostra vestibulum" SendIndex="84" SendName="Morbi vel blandit" SendAddr="Parturient dis consequat accumsan augue" Text="Lorem elementum" UnitsMetric="Fermentum iaculis amet semper massa" Units="Gravida sapien" UnitsUs="Metus lacinia morbi">
+					<Tags:DataTag.EventTime>
+						<System:TimeSpan/>
+					</Tags:DataTag.EventTime>
+					<Tags:DataTag.Float>
+						<System:Single/>
+					</Tags:DataTag.Float>
+					<Tags:DataTag.Group>
+						<System:String>Est hac vestibulum bibendum quis</System:String>
+						<System:String>Primis rutrum urna</System:String>
+						<System:String>Dignissim felis</System:String>
+						<System:String>Ipsum leo mus egestas dictumst</System:String>
+						<System:String>Euismod cras</System:String>
+					</Tags:DataTag.Group>
+					<Tags:DataTag.Parent>
+						<Tags:DataTag BaseText="Integer quisque" Bool="False" CurrentLanguage="Mus hendrerit rhoncus" CurrentUom="NA" DataType="Byte" Date="11/05/2015 17:19:29" Description="Porttitor vestibulum vestibulum" Double="869.19" DebugPage="Sed eget" Int="89" InRange="True" LastDouble="105.91" LastInt="37" LastText="Elit vehicula montes" Max="720.43" Min="593.6" Name="Himenaeos vestibulum adipiscing" OriginalName="Mattis per torquent etiam" ReadName="Sodales sociosqu imperdiet" RoundMetric="52" ReadIndex="78" Rounding="65" ReadAddr="Penatibus diam aliquam" RoundUs="45" ReadFrom="Magnis donec suscipit" SendIndex="80" SendName="Malesuada nec viverra non curae" SendAddr="Mauris parturient mollis" Text="Vivamus tincidunt tristique ultrices" UnitsMetric="Nibh nisi adipiscing" Units="Enim erat fusce aliquam eros" UnitsUs="Aliquet parturient ultricies sem"/>
+					</Tags:DataTag.Parent>
+					<Tags:DataTag.SendList>
+						<System:String>Vulputate nunc vestibulum ornare curabitur</System:String>
+						<System:String>Conubia cubilia</System:String>
+						<System:String>Adipiscing nulla platea</System:String>
+						<System:String>Odio nam</System:String>
+						<System:String>Maecenas phasellus sed</System:String>
+					</Tags:DataTag.SendList>
+				</Tags:DataTag>
+			</Helpers:DataTagNotifyPropertyChanged.Tag>
+		</Helpers:DataTagNotifyPropertyChanged>
+		<Helpers:DataTagNotifyPropertyChanged>
+			<Helpers:DataTagNotifyPropertyChanged.Tag>
+				<Tags:DataTag BaseText="Parturient nunc" Bool="False" CurrentLanguage="Laoreet ante adipiscing parturient" CurrentUom="NA" DataType="TimeOfDay" Date="11/05/2015 17:19:29" Description="Suscipit dictum adipiscing torquent lorem" Double="261.78" DebugPage="Sagittis hac donec" Int="24" InRange="True" LastDouble="926.97" LastInt="73" LastText="Aliquam ante arcu" Max="261.03" Min="956.96" Name="Turpis varius rhoncus sodales" OriginalName="Quis tincidunt" ReadName="Nunc risus" RoundMetric="43" ReadIndex="80" Rounding="84" ReadAddr="Quisque placerat auctor pulvinar" RoundUs="73" ReadFrom="Aenean vitae malesuada" SendIndex="71" SendName="Odio dis velit" SendAddr="Est tristique" Text="Lectus amet morbi" UnitsMetric="Diam nec venenatis vulputate eget" Units="Ultrices mus libero aliquet vehicula" UnitsUs="Volutpat blandit maecenas">
+					<Tags:DataTag.EventTime>
+						<System:TimeSpan/>
+					</Tags:DataTag.EventTime>
+					<Tags:DataTag.Float>
+						<System:Single/>
+					</Tags:DataTag.Float>
+					<Tags:DataTag.Group>
+						<System:String>Congue ultricies</System:String>
+						<System:String>Senectus vestibulum</System:String>
+						<System:String>Etiam urna leo</System:String>
+						<System:String>Cras sociosqu vivamus vestibulum duis</System:String>
+						<System:String>Fusce cursus</System:String>
+					</Tags:DataTag.Group>
+					<Tags:DataTag.Parent>
+						<Tags:DataTag BaseText="Vestibulum tellus" Bool="False" CurrentLanguage="Vestibulum natoque vestibulum" CurrentUom="US" DataType="Bits" Date="11/05/2015 17:19:29" Description="Vel interdum taciti" Double="885.39" DebugPage="Porta himenaeos" Int="79" InRange="True" LastDouble="298.84" LastInt="29" LastText="Enim erat eros nibh nam" Max="365.59" Min="169.04" Name="Posuere arcu" OriginalName="Parturient potenti habitasse" ReadName="Diam sed eleifend eget" RoundMetric="87" ReadIndex="97" Rounding="70" ReadAddr="Hendrerit elit sociis" RoundUs="15" ReadFrom="Adipiscing sem inceptos sit" SendIndex="14" SendName="Fringilla neque facilisi faucibus habitant" SendAddr="Netus nulla" Text="Tempor tempus" UnitsMetric="Sed purus" Units="Nisi imperdiet nisl" UnitsUs="Tortor lobortis pretium"/>
+					</Tags:DataTag.Parent>
+					<Tags:DataTag.SendList>
+						<System:String>Penatibus orci nascetur viverra mauris</System:String>
+						<System:String>Nullam class</System:String>
+						<System:String>Curae pede</System:String>
+						<System:String>Pharetra vestibulum aliquam porttitor adipiscing</System:String>
+						<System:String>Aptent parturient integer quam</System:String>
+					</Tags:DataTag.SendList>
+				</Tags:DataTag>
+			</Helpers:DataTagNotifyPropertyChanged.Tag>
+		</Helpers:DataTagNotifyPropertyChanged>
+		<Helpers:DataTagNotifyPropertyChanged>
+			<Helpers:DataTagNotifyPropertyChanged.Tag>
+				<Tags:DataTag BaseText="Porta ultricies" Bool="False" CurrentLanguage="Nulla curabitur vestibulum commodo" CurrentUom="NA" DataType="Byte" Date="11/05/2015 17:19:29" Description="Primis vestibulum amet" Double="152.96" DebugPage="Ornare nascetur" Int="20" InRange="True" LastDouble="814.62" LastInt="70" LastText="Diam rutrum eget sed sem" Max="300.11" Min="106.87" Name="Adipiscing faucibus" OriginalName="Iaculis lacinia lobortis vestibulum" ReadName="Fermentum fringilla habitasse" RoundMetric="69" ReadIndex="24" Rounding="31" ReadAddr="Vestibulum neque mus" RoundUs="73" ReadFrom="Pede mauris mollis" SendIndex="15" SendName="Parturient hendrerit mattis himenaeos feugiat" SendAddr="Cras duis nec laoreet nostra" Text="Ante venenatis adipiscing arcu vulputate" UnitsMetric="Sit sapien semper" Units="Elit enim purus erat posuere" UnitsUs="Pharetra eros nibh placerat potenti">
+					<Tags:DataTag.EventTime>
+						<System:TimeSpan/>
+					</Tags:DataTag.EventTime>
+					<Tags:DataTag.Float>
+						<System:Single/>
+					</Tags:DataTag.Float>
+					<Tags:DataTag.Group>
+						<System:String>Non netus</System:String>
+						<System:String>Adipiscing nulla</System:String>
+						<System:String>Porttitor nunc platea tincidunt</System:String>
+						<System:String>Natoque parturient</System:String>
+						<System:String>Vestibulum per tristique</System:String>
+					</Tags:DataTag.Group>
+					<Tags:DataTag.Parent>
+						<Tags:DataTag BaseText="Egestas vel parturient" Bool="False" CurrentLanguage="Proin conubia augue dolor" CurrentUom="US" DataType="TimeOfDay" Date="11/05/2015 17:19:29" Description="Lorem luctus" Double="941.99" DebugPage="Nisl bibendum dapibus" Int="70" InRange="True" LastDouble="483.52" LastInt="73" LastText="Magnis nunc odio convallis dignissim" Max="364.55" Min="744.36" Name="Praesent elit non enim ligula" OriginalName="Nibh sit" ReadName="Per erat" RoundMetric="29" ReadIndex="80" Rounding="31" ReadAddr="Nisi adipiscing ipsum" RoundUs="47" ReadFrom="Sed felis sem" SendIndex="86" SendName="Vestibulum accumsan litora fames eros" SendAddr="Cubilia phasellus justo lacus" Text="Vestibulum consequat nam vestibulum magna" UnitsMetric="Massa metus dictumst sed eleifend" Units="Orci elementum" UnitsUs="Facilisis euismod dis facilisi"/>
+					</Tags:DataTag.Parent>
+					<Tags:DataTag.SendList>
+						<System:String>Quam quis morbi urna</System:String>
+						<System:String>Imperdiet habitant</System:String>
+						<System:String>Est malesuada</System:String>
+						<System:String>Gravida inceptos interdum montes hac</System:String>
+						<System:String>Penatibus leo</System:String>
+					</Tags:DataTag.SendList>
+				</Tags:DataTag>
+			</Helpers:DataTagNotifyPropertyChanged.Tag>
+		</Helpers:DataTagNotifyPropertyChanged>
+		<Helpers:DataTagNotifyPropertyChanged>
+			<Helpers:DataTagNotifyPropertyChanged.Tag>
+				<Tags:DataTag BaseText="Parturient justo" Bool="False" CurrentLanguage="Pulvinar vel curabitur nam" CurrentUom="Metric" DataType="Integer" Date="11/05/2015 17:19:29" Description="Penatibus litora ipsum" Double="377.53" DebugPage="Libero nam proin dapibus" Int="46" InRange="True" LastDouble="181.13" LastInt="72" LastText="Lacus vestibulum" Max="437.85" Min="659.84" Name="Auctor dictumst congue eleifend" OriginalName="Adipiscing parturient commodo" ReadName="Donec parturient vivamus aliquam cursus" RoundMetric="67" ReadIndex="13" Rounding="17" ReadAddr="Amet hendrerit lectus vestibulum" RoundUs="98" ReadFrom="Etiam fusce aliquet" SendIndex="64" SendName="Fermentum cras fringilla dictum" SendAddr="Conubia cubilia sit vel" Text="Arcu porttitor vestibulum euismod feugiat" UnitsMetric="Interdum diam eget lobortis" Units="Lorem adipiscing" UnitsUs="Nascetur luctus dis magnis">
+					<Tags:DataTag.EventTime>
+						<System:TimeSpan/>
+					</Tags:DataTag.EventTime>
+					<Tags:DataTag.Float>
+						<System:Single/>
+					</Tags:DataTag.Float>
+					<Tags:DataTag.Group>
+						<System:String>Sed vestibulum</System:String>
+						<System:String>Ligula adipiscing parturient ante</System:String>
+						<System:String>Augue dolor egestas</System:String>
+						<System:String>Vestibulum fames vestibulum adipiscing</System:String>
+						<System:String>Felis himenaeos inceptos imperdiet malesuada</System:String>
+					</Tags:DataTag.Group>
+					<Tags:DataTag.Parent>
+						<Tags:DataTag BaseText="Orci viverra varius vestibulum hac" Bool="False" CurrentLanguage="Parturient sociis sagittis nisi" CurrentUom="Metric" DataType="Integer" Date="11/05/2015 17:19:29" Description="Sodales praesent turpis parturient" Double="450.03" DebugPage="Odio dis est" Int="68" InRange="True" LastDouble="959.29" LastInt="82" LastText="Mauris aliquam quam leo dignissim" Max="496.58" Min="805.54" Name="Vestibulum senectus phasellus risus pretium" OriginalName="Ultrices vehicula tempor volutpat adipiscing" ReadName="Sociosqu consequat taciti convallis vestibulum" RoundMetric="65" ReadIndex="45" Rounding="21" ReadAddr="Rhoncus tempus nisl" RoundUs="40" ReadFrom="Tellus torquent velit" SendIndex="11" SendName="Suscipit sed" SendAddr="Maecenas tortor vitae nunc" Text="Aenean accumsan vestibulum adipiscing pede" UnitsMetric="Elementum integer quisque aptent urna" Units="Quis class nullam bibendum" UnitsUs="Facilisis curae"/>
+					</Tags:DataTag.Parent>
+					<Tags:DataTag.SendList>
+						<System:String>Blandit mus duis vestibulum</System:String>
+						<System:String>Nec nunc lorem</System:String>
+						<System:String>Vestibulum habitasse</System:String>
+						<System:String>Non per facilisi morbi faucibus</System:String>
+						<System:String>Sed nulla sem habitant</System:String>
+					</Tags:DataTag.SendList>
+				</Tags:DataTag>
+			</Helpers:DataTagNotifyPropertyChanged.Tag>
+		</Helpers:DataTagNotifyPropertyChanged>
+	</LiveData:ViewModel.LiveDataList>
+	<LiveData:ViewModel.PlusButtonCommand>
+		<Commands:DelegateCommand IsActive="True"/>
+	</LiveData:ViewModel.PlusButtonCommand>
+</LiveData:ViewModel>

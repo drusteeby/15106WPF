@@ -8,13 +8,14 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Tecmosa</RootNamespace>
-    <AssemblyName>_Tecmosa</AssemblyName>
+    <AssemblyName>Tecmosa</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -27,7 +28,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -51,9 +51,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="3DTools">
-      <HintPath>..\..\..\..\..\Downloads\WPFInterop\WPFInterop\bin\Release\3DTools.dll</HintPath>
-    </Reference>
     <Reference Include="GalaSoft.MvvmLight, Version=5.2.0.37222, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmLightLibs.5.2.0.0\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
       <Private>True</Private>
@@ -141,35 +138,58 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="App\WindowRegionAdapter.cs" />
+    <Compile Include="Controls\3D\Cube.xaml.cs">
+      <DependentUpon>Cube.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\AdornedControl.cs" />
     <Compile Include="Controls\FrameworkElementAdorner.cs" />
-    <Compile Include="Controls\NumberEntryBox.xaml.cs">
-      <DependentUpon>NumberEntryBox.xaml</DependentUpon>
+    <Compile Include="Controls\Helpers\FindUid.cs" />
+    <Compile Include="Controls\Helpers\IListItemConverter.cs" />
+    <Compile Include="Controls\Helpers\MultiSelectorBehavior.cs" />
+    <Compile Include="Controls\Helpers\TagDataConverter.cs" />
+    <Compile Include="Controls\Helpers\TagNameConverter.cs" />
+    <Compile Include="Controls\Helpers\TwoListSynchronizer.cs" />
+    <Compile Include="Controls\LiveData\AddData\View.xaml.cs">
+      <DependentUpon>View.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\NumPad.xaml.cs">
-      <DependentUpon>NumPad.xaml</DependentUpon>
+    <Compile Include="Controls\LiveData\AddData\ViewModel.cs" />
+    <Compile Include="Controls\LiveData\LiveDataTagViewModel.cs" />
+    <Compile Include="Controls\LiveData\LiveDataTemplateSelector.cs" />
+    <Compile Include="Controls\LiveData\View.xaml.cs">
+      <DependentUpon>View.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DataObjects\TagDataObject.cs" />
-    <Compile Include="DataTagNotifyPropertyChanged.cs" />
-    <Compile Include="Results\Views\ResultView.xaml.cs">
-      <DependentUpon>ResultView.xaml</DependentUpon>
+    <Compile Include="Controls\LiveData\ViewModel.cs" />
+    <Compile Include="Pages\MainScreen.xaml.cs">
+      <DependentUpon>MainScreen.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Results\_Helpers\GroupBoxHeaderConverter.cs" />
-    <Compile Include="Results\_Helpers\GroupResultByName.cs" />
-    <Compile Include="Results\Models\Model.cs" />
-    <Compile Include="Results\Views\ResultPage.xaml.cs">
+    <Compile Include="Controls\Results\Helpers\AddSpaceAfterCapitals.cs" />
+    <Compile Include="Controls\Helpers\DataTagNotifyPropertyChanged.cs" />
+    <Compile Include="Controls\Results\Helpers\GroupboxHeaderConverter.cs" />
+    <Compile Include="Controls\Results\Helpers\GroupResultsByName.cs" />
+    <Compile Include="Controls\Results\Helpers\ResultTemplateSelector.cs" />
+    <Compile Include="Controls\Results\Helpers\UseModernConverter.cs" />
+    <Compile Include="Controls\Results\Model.cs" />
+    <Compile Include="Controls\Results\ViewModels\ResultPageViewModel.cs" />
+    <Compile Include="Controls\Results\ViewModels\ResultViewModel.cs" />
+    <Compile Include="Controls\Results\ViewModels\TestPointViewModel.cs" />
+    <Compile Include="Controls\Results\Views\ResultClassic.xaml.cs">
+      <DependentUpon>ResultClassic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Results\Views\ResultModern.xaml.cs">
+      <DependentUpon>ResultModern.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Results\Views\ResultPage.xaml.cs">
       <DependentUpon>ResultPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Results\ViewModels\ResultViewModel.cs" />
-    <Compile Include="Results\ViewModels\ResultPageViewModel.cs" />
-    <Compile Include="Results\_Helpers\ResultTemplateSelector.cs" />
-    <Compile Include="Results\_Helpers\StringAddSpaceToCapsConverter.cs" />
-    <Compile Include="Results\ViewModels\TestPointViewModel.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="SampleData\ResultPageViewModelSampleDataSampleDataSource\ResultPageViewModelSampleDataSampleDataSource.xaml.cs">
       <DependentUpon>ResultPageViewModelSampleDataSampleDataSource.xaml</DependentUpon>
     </Compile>
     <Compile Include="Sequences\Results.cs" />
-    <Compile Include="_Common\ExtensionMethods\GetScrollViewer.cs" />
     <Page Include="App\Shell.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -182,15 +202,19 @@
     <Compile Include="App\Shell.xaml.cs">
       <DependentUpon>Shell.xaml</DependentUpon>
     </Compile>
-    <Page Include="Controls\NumberEntryBox.xaml">
+    <Page Include="Controls\3D\Cube.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\NumPad.xaml">
+    <Page Include="Controls\LiveData\AddData\View.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ResourceDictionary.xaml">
+    <Page Include="Controls\LiveData\View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MainScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -198,22 +222,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </DesignData>
-    <Page Include="Results\Templates.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Results\Views\HeaderView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Results\Views\ResultView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Results\Views\ResultPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <DesignData Include="SampleData\ResultPageViewModelSampleData.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -222,30 +230,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </DesignTimeOnly>
+    <Page Include="Controls\Results\Views\ResultClassic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Results\Views\ResultModern.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Results\Views\ResultPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResourceDictionary.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <DesignData Include="SampleData\ViewModelSampleData1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </DesignData>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
     <AppDesigner Include="Properties\" />
     <None Include="SampleData\ResultPageViewModelSampleDataSampleDataSource\ResultPageViewModelSampleDataSampleDataSource.xsd" />
   </ItemGroup>
@@ -260,10 +268,16 @@
       <Project>{2b43ca60-b363-44af-b242-605a7ebd73b2}</Project>
       <Name>MCM</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CoreControlsWPF\CoreControlsWPF.csproj">
+      <Project>{40d68c59-6b2e-4f6c-836b-4b49df989b21}</Project>
+      <Name>CoreControlsWPF</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="DataTags\Alarms.xml" />
-    <Resource Include="DataTags\Manual.xml" />
+    <Resource Include="DataTags\Manual.xml">
+      <SubType>Designer</SubType>
+    </Resource>
     <Resource Include="DataTags\Part.xml" />
     <Resource Include="DataTags\Polls.xml" />
     <Resource Include="DataTags\Results.xml" />
@@ -285,6 +299,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
